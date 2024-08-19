@@ -969,9 +969,9 @@ def Model_pro(in_seq, mask, seq_cxt, args, buy_seq_mask, cart_seq_mask, fav_seq_
                 #click_seq *= 0.1*(click_seq_mask)
 
 
-        #seq = buy_seq + cart_seq + fav_seq + click_seq +seq_cxt_emb # adding again the cxt
+        seq = buy_seq + cart_seq + fav_seq + click_seq +seq_cxt_emb # adding again the cxt
         #seq = normalize(seq) + t
-        seq = seq_res 
+        #seq = seq_res 
         #=========== attention between all items of the input sequence ==================
 
         # Build blocks
